@@ -25,10 +25,14 @@ def temp_somewhere(request):
 
 def temp_here(request):
     location = geocoder.ip('me').latlng
+    g = geocoder.ip('me')
+    city = g.city
+    country = g.country
     temp = get_temp(location)
     template = loader.get_template("index.html")
     context = {
-        "city": "Your location",
+        "country": country if country else "",
+        "city": city if city else "Your location",
         "temp": temp
     }
     return HttpResponse(template.render(context, request))
