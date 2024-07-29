@@ -67,4 +67,4 @@ A continuación, algunas capturas de pantalla de la aplicación:
 
 ## Agradecimientos
 
-Este proyecto fue desarrollado siguiendo el tutorial [Building APIs With Django REST Framework](https://blog.jetbrains.com/pycharm/2023/09/building-apis-with-django-rest-framework/) por Denis Mashutin. Agradezco a Denis Mashutin por su excelente guía.
+Este proyecto fue desarrollado siguiendo el tutorial [Create a Django App in PyCharm](https://blog.jetbrains.com/pycharm/2023/04/create-a-django-app-in-pycharm) por Denis Mashutin. Agradezco a Denis Mashutin por su excelente guía.
