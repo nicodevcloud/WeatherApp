@@ -1,7 +1,6 @@
 # WeatherApp
 
-WeatherApp es una aplicación web desarrollada en Django que permite a los usuarios obtener la temperatura actual de su
-ubicación o descubrir la temperatura en diferentes ciudades alrededor del mundo.
+WeatherApp es una aplicación web desarrollada en Django que permite a los usuarios obtener la temperatura actual de su ubicación o descubrir la temperatura en diferentes ciudades alrededor del mundo.
 
 ## Características
 
@@ -17,8 +16,11 @@ ubicación o descubrir la temperatura en diferentes ciudades alrededor del mundo
 
 ## Requisitos
 
-Para ejecutar este proyecto, necesitarás Python 3.6 o superior y Django instalado en tu sistema. También necesitarás
-acceso a Internet para realizar llamadas a la API de Open-Meteo.
+Para ejecutar este proyecto, necesitarás:
+
+- Python 3.6 o superior
+- Django
+- Acceso a Internet para realizar llamadas a la API de Open-Meteo
 
 ## Instalación
 
@@ -32,15 +34,20 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu sistema local:
    ```
    cd WeatherApp
    ```
-3. Instala las dependencias:
+3. Crea y activa un entorno virtual (opcional pero recomendado):
+   ```
+   python3 -m venv venv
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
+   ```
+4. Instala las dependencias:
    ```
    pip install -r requirements.txt
    ```
-4. Realiza las migraciones necesarias:
+5. Realiza las migraciones necesarias:
    ```
    python manage.py migrate
    ```
-5. Ejecuta el servidor de desarrollo:
+6. Ejecuta el servidor de desarrollo:
    ```
    python manage.py runserver
    ```
@@ -57,3 +64,7 @@ Ahora, la aplicación debería estar corriendo en `http://127.0.0.1:8000/`.
 A continuación, algunas capturas de pantalla de la aplicación:
 ![Home](screenshots/home.png)
 ![Discover](screenshots/discover.png)
+
+## Agradecimientos
+
+Este proyecto fue desarrollado siguiendo el tutorial [Building APIs With Django REST Framework](https://blog.jetbrains.com/pycharm/2023/09/building-apis-with-django-rest-framework/) por Denis Mashutin. Agradezco a Denis Mashutin por su excelente guía.
